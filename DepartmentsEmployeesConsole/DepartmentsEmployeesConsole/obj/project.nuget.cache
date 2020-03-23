@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GB9pu7bI0QIqN+z8IsDh7pDGp3cHW7kHFgbxCF/orcl0eyXQrjPWL/zRA7dJQmqzKYLEKXyLvriWJYOXdNy0Fg==",
+  "dgSpecHash": "fnenf5kjA7vrpLbXjOmR1Ghaoq+gszH2qT9nlJy1xODaIKS3tgh/jkSkaJMk/f62YzaIY2NQwiZJ/yCXAjO7MA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\janse\\source\\repos\\DepartmentsEmployeesConsole\\DepartmentsEmployeesConsole\\DepartmentsEmployeesConsole.csproj",
+  "projectFilePath": "C:\\Users\\janse\\workspace\\SQLExercises\\DepartmentsEmployeesConsole\\DepartmentsEmployeesConsole\\DepartmentsEmployeesConsole.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\janse\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\janse\\.nuget\\packages\\microsoft.data.sqlclient\\1.1.1\\microsoft.data.sqlclient.1.1.1.nupkg.sha512",

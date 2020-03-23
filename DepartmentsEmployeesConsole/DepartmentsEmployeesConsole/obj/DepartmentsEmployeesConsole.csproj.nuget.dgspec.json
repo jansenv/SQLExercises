@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\janse\\source\\repos\\DepartmentsEmployeesConsole\\DepartmentsEmployeesConsole\\DepartmentsEmployeesConsole.csproj": {}
+    "C:\\Users\\janse\\workspace\\SQLExercises\\DepartmentsEmployeesConsole\\DepartmentsEmployeesConsole\\DepartmentsEmployeesConsole.csproj": {}
   },
   "projects": {
-    "C:\\Users\\janse\\source\\repos\\DepartmentsEmployeesConsole\\DepartmentsEmployeesConsole\\DepartmentsEmployeesConsole.csproj": {
+    "C:\\Users\\janse\\workspace\\SQLExercises\\DepartmentsEmployeesConsole\\DepartmentsEmployeesConsole\\DepartmentsEmployeesConsole.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\janse\\source\\repos\\DepartmentsEmployeesConsole\\DepartmentsEmployeesConsole\\DepartmentsEmployeesConsole.csproj",
+        "projectUniqueName": "C:\\Users\\janse\\workspace\\SQLExercises\\DepartmentsEmployeesConsole\\DepartmentsEmployeesConsole\\DepartmentsEmployeesConsole.csproj",
         "projectName": "DepartmentsEmployeesConsole",
-        "projectPath": "C:\\Users\\janse\\source\\repos\\DepartmentsEmployeesConsole\\DepartmentsEmployeesConsole\\DepartmentsEmployeesConsole.csproj",
+        "projectPath": "C:\\Users\\janse\\workspace\\SQLExercises\\DepartmentsEmployeesConsole\\DepartmentsEmployeesConsole\\DepartmentsEmployeesConsole.csproj",
         "packagesPath": "C:\\Users\\janse\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\janse\\source\\repos\\DepartmentsEmployeesConsole\\DepartmentsEmployeesConsole\\obj\\",
+        "outputPath": "C:\\Users\\janse\\workspace\\SQLExercises\\DepartmentsEmployeesConsole\\DepartmentsEmployeesConsole\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\janse\\AppData\\Roaming\\NuGet\\NuGet.Config",

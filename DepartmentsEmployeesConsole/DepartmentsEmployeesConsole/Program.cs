@@ -20,6 +20,20 @@ namespace DepartmentsEmployeesConsole
             var employeeWithId2 = repo.GetEmployeeById(2);
 
             Console.WriteLine($"Employee with Id 2 is {employeeWithId2.FirstName} {employeeWithId2.LastName}");
+
+            var deptRepo = new DepartmentRepository();
+            var departments = deptRepo.GetAllDepartments();
+
+            foreach (var department in departments)
+            {
+                Console.WriteLine($"{department.DeptName}");
+            }
+
+            Console.WriteLine("Let's get a department with the ID 2");
+
+            var deptWithId2 = deptRepo.GetDepartmentById(2);
+
+            Console.WriteLine($"Department with Id 2 {deptWithId2.DeptName}");
         }
     }
 }
