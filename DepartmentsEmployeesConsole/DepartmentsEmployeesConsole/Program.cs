@@ -10,10 +10,11 @@ namespace DepartmentsEmployeesConsole
         {
             var repo = new EmployeeRepository();
             var employees = repo.GetAllEmployees();
+            var employeesWithDept = repo.GetAllEmployeesWithDepartment();
 
             foreach (var employee in employees)
             {
-                Console.WriteLine($"{employee.FirstName} {employee.LastName} is in {employee.Department.DeptName}");
+                Console.WriteLine($"{employee.FirstName} {employee.LastName}");
             }
 
             Console.WriteLine("Let's get an employee with the ID 2");
@@ -36,15 +37,21 @@ namespace DepartmentsEmployeesConsole
 
             Console.WriteLine($"Department with Id 2 {deptWithId2.DeptName}");
 
-            Department legalDept = new Department
+            Console.WriteLine("-----All Employees-----");
+            foreach (var employee in employeesWithDept)
             {
-                DeptName = "Legal"
-            };
+                Console.WriteLine($"{employee.FirstName} {employee.LastName} {employee.DepartmentId} {employee.Department.DeptName}");
+            }
 
-            deptRepo.AddDepartment(legalDept);
+            //Department legalDept = new Department
+            //{
+            //    DeptName = "Legal"
+            //};
 
-            Console.WriteLine("-------------------------------"); 
-            Console.WriteLine("Added the new Legal Department!");
+            //deptRepo.AddDepartment(legalDept);
+
+            //Console.WriteLine("-------------------------------"); 
+            //Console.WriteLine("Added the new Legal Department!");
         }
     }
 }
