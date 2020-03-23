@@ -78,11 +78,7 @@ namespace DepartmentsEmployeesConsole.Data
                             FirstName = firstNameValue,
                             LastName = lastNameValue,
                             DepartmentId = departmentValue,
-                            Department = new Department()
-                            {
-                                Id = departmentValue,
-                                DeptName = departmentNameValue
-                            }
+                            Department = null
                         };
 
                         // Now that we have a parsed C# object, we can add it to the list and continue with the while loop

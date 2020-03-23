@@ -134,5 +134,66 @@ namespace DepartmentsEmployeesConsole.Data
                 }
             }
         }
+
+        /// <summary>
+        /// Add a new department to the database
+        /// NOTE: This method sends data to the database,
+        /// it does not get anything from the database, so there is nothing to return.
+        /// </summary>
+        
+        public void AddDepartment (Department department)
+        {
+            using (SqlConnection conn = Connection)
+            {
+                conn.Open();
+                using (SqlCommand cmd = conn.CreateCommand())
+                {
+                    // These SQL parameters are annoying. Why can't we use string interpolation?
+                    // .. sql injection attacks!!!
+                    cmd.CommandText = "INSERT INTO Department (DeptName) OUTPUT INSERTED.Id Values (@deptName)";
+                    cmd.Parameters.Add(new SqlParameter("@deptName", department.DeptName));
+                    int id = (int)cmd.ExecuteScalar();
+
+                    department.Id = id;
+                } 
+            }
+
+            // when this method is finished we can look in the database and see the new department.
+        }
+
+        public void UpdateDepartment(int id, Department department)
+        {
+            using(SqlConnection conn = Connection)
+            {
+                conn.Open();
+                using (SqlCommand cmd = conn.CreateCommand())
+                {
+                    cmd.CommandText = @"UPDATE Department
+                                            SET DeptName = @deptName
+                                            WHERE Id = @id";
+                    cmd.Parameters.Add(new SqlParameter("@deptName", department.DeptName));
+                    cmd.Parameters.Add(new SqlParameter("@id", id));
+
+                    cmd.ExecuteNonQuery();
+                }    
+            }
+        }
+
+        /// <summary>
+        /// Delete the department with the given id
+        /// </summary>
+        public void DeleteDepartment(int id)
+        {
+            using (SqlConnection conn = Connection)
+            {
+                conn.Open();
+                using (SqlCommand cmd = conn.CreateCommand())
+                {
+                    cmd.CommandText = "DELETE FROM Department where Id = @id";
+                    cmd.Parameters.Add(new SqlParameter("@id", id));
+                    cmd.ExecuteNonQuery();
+                }    
+            }
+        }
     }
 }

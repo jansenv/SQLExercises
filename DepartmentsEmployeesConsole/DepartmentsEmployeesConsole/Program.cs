@@ -1,4 +1,5 @@
 ﻿using DepartmentsEmployeesConsole.Data;
+using DepartmentsEmployeesConsole.Models;
 using System;
 
 namespace DepartmentsEmployeesConsole
@@ -26,7 +27,7 @@ namespace DepartmentsEmployeesConsole
 
             foreach (var department in departments)
             {
-                Console.WriteLine($"{department.DeptName}");
+                Console.WriteLine($"{department.Id} {department.DeptName}");
             }
 
             Console.WriteLine("Let's get a department with the ID 2");
@@ -34,6 +35,16 @@ namespace DepartmentsEmployeesConsole
             var deptWithId2 = deptRepo.GetDepartmentById(2);
 
             Console.WriteLine($"Department with Id 2 {deptWithId2.DeptName}");
+
+            Department legalDept = new Department
+            {
+                DeptName = "Legal"
+            };
+
+            deptRepo.AddDepartment(legalDept);
+
+            Console.WriteLine("-------------------------------"); 
+            Console.WriteLine("Added the new Legal Department!");
         }
     }
 }
