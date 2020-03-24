@@ -252,7 +252,7 @@ namespace DepartmentsEmployeesConsole.Data
 
                     cmd.Parameters.Add(new SqlParameter("@FirstName", employee.FirstName));
                     cmd.Parameters.Add(new SqlParameter("@LastName", employee.LastName));
-                    cmd.Parameters.Add(new SqlParameter("@DepartmendId", employee.DepartmentId));
+                    cmd.Parameters.Add(new SqlParameter("@DepartmentId", employee.DepartmentId));
 
                     int id = (int)cmd.ExecuteScalar();
 
