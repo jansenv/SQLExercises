@@ -4,7 +4,7 @@ using System.Text;
 
 namespace WalkinTheDog.Data
 {
-    class Class1
+    class NeighborhoodRepository
     {
     }
 }
