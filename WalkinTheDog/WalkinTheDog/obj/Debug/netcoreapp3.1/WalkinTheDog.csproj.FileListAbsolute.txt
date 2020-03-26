@@ -1,0 +1,4 @@
+C:\Users\janse\workspace\SQLExercises\WalkinTheDog\WalkinTheDog\bin\Debug\netcoreapp3.1\WalkinTheDog.exe
+C:\Users\janse\workspace\SQLExercises\WalkinTheDog\WalkinTheDog\obj\Debug\netcoreapp3.1\WalkinTheDog.csprojAssemblyReference.cache
+C:\Users\janse\workspace\SQLExercises\WalkinTheDog\WalkinTheDog\obj\Debug\netcoreapp3.1\WalkinTheDog.AssemblyInfoInputs.cache
+C:\Users\janse\workspace\SQLExercises\WalkinTheDog\WalkinTheDog\obj\Debug\netcoreapp3.1\WalkinTheDog.AssemblyInfo.cs
