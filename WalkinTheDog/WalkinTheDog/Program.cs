@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using WalkinTheDog.Data;
+using WalkinTheDog.Models;
 
 namespace WalkinTheDog
 {
@@ -28,6 +29,15 @@ namespace WalkinTheDog
             {
                 Console.WriteLine($"{walker.Id}: {walker.Name}");
             }
+
+            // Exercise iii
+            Walker ex3walker = new Walker
+            {
+                Name = "Holden",
+                NeighborhoodId = 3
+            };
+
+            walkerRepo.AddWalker(ex3walker);
         }
     }
 }

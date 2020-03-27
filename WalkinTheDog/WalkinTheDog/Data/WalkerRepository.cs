@@ -70,5 +70,26 @@ namespace WalkinTheDog.Data
                 }
             }
         }
+
+        public void AddWalker(Walker walker)
+        {
+            using (SqlConnection conn = Connection)
+            {
+                conn.Open();
+                using (SqlCommand cmd = conn.CreateCommand())
+                {
+                    cmd.CommandText = @"INSERT INTO Walker (Name, NeighborhoodId)
+                                        OUTPUT INSERTED.Id
+                                        VALUES (@Name, @NeighborhoodId)";
+
+                    cmd.Parameters.Add(new SqlParameter("@Name", walker.Name));
+                    cmd.Parameters.Add(new SqlParameter("@NeighborhoodId", walker.NeighborhoodId));
+
+                    int id = (int)cmd.ExecuteScalar();
+
+                    walker.Id = id;
+                }
+            }
+        }
     }
 }
